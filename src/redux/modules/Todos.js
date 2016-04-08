@@ -18,6 +18,10 @@ export const PARSE_XLSX_REQUEST = 'PARSE_XLSX_REQUEST'
 export const PARSE_XLSX_SUCCESS = 'PARSE_XLSX_SUCCESS'
 export const PARSE_XLSX_FAIL = 'PARSE_XLSX_FAIL'
 
+export const FETCH_FIELDS_REQUEST = 'FETCH_FIELDS_REQUEST'
+export const FETCH_FIELDS_SUCCESS = 'FETCH_FIELDS_SUCCESS'
+export const FETCH_FIELDS_FAIL = 'FETCH_FIELDS_FAIL'
+
 export const getHeaderRequest = createAction(FETCH_HEADER_REQUEST, (data) => data)
 export const getHeaderSuccess = createAction(FETCH_HEADER_SUCCESS, (data) => data)
 export const getHeaderFail = createAction(FETCH_HEADER_FAIL, (data) => data)
@@ -30,6 +34,10 @@ export const parseXlsxRequest = createAction(PARSE_XLSX_REQUEST, (data) => data)
 export const parseXlsxSuccess = createAction(PARSE_XLSX_SUCCESS, (data) => data)
 export const parseXlsxFail = createAction(PARSE_XLSX_FAIL, (data) => data)
 
+export const getFieldsRequest = createAction(FETCH_FIELDS_REQUEST, (data) => data)
+export const getFieldsSuccess = createAction(FETCH_FIELDS_SUCCESS, (data) => data)
+export const getFieldsFail = createAction(FETCH_FIELDS_FAIL, (data) => data)
+
 const initialState = Immutable.fromJS({
   myCollection: null,
   mappingHeader: null,
@@ -39,8 +47,39 @@ const initialState = Immutable.fromJS({
   isUploaded: false,
   isUploading: false,
   isParsing: false,
-  isParsed: false
+  isParsed: false,
+  mappingFields: null,
+  isFetchFields: false,
+  isFetchingFields: false
 })
+
+export function getFields () {
+  return (dispatch, getState) => {
+    dispatch(getFieldsRequest())
+    return fetch(`${API_URL}/Fields/GetAll`, {
+      method: 'GET',
+      mode: 'cors'
+    }).then(checkHttpStatus)
+      .then(parseJSON)
+      .then((response) => {
+        try {
+          dispatch(getFieldsSuccess(response))
+        } catch (e) {
+          console.log(e)
+          dispatch(getFieldsFail({
+            status: 403,
+            statusText: e.message
+          }))
+        }
+      })
+      .catch((error) => {
+        dispatch(getFieldsFail({
+          status: 401,
+          statusText: error.message
+        }))
+      })
+  }
+}
 
 export function getMappingHeader () {
   return (dispatch, getState) => {
@@ -119,9 +158,30 @@ export function parseXlsx (data) {
 }
 
 // Action Creators
-export const actions = { getMappingHeader, uploadFile, parseXlsx }
+export const actions = { getFields, getMappingHeader, uploadFile, parseXlsx }
 
 export default handleActions({
+  [FETCH_FIELDS_REQUEST]: (state, { payload }) => {
+    return {...state,
+      isFetchingFields: true,
+      isFetchFields: false
+    }
+  },
+  [FETCH_FIELDS_SUCCESS]: (state, { payload }) => {
+    return {...state,
+      isFetchingFields: false,
+      isFetchFields: true,
+      mappingFields: payload
+    }
+  },
+  [FETCH_FIELDS_FAIL]: (state, { payload }) => {
+    return {...state,
+      isFetchingFields: false,
+      isFetchFields: false,
+      statusText: payload.statusText,
+      mappingFields: null
+    }
+  },
   [FETCH_HEADER_REQUEST]: (state, { payload }) => {
     return {...state,
       isFetchingHeader: true,

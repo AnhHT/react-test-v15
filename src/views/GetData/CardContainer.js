@@ -140,9 +140,7 @@ export default class CardContainer extends Component {
 
   render () {
     const { cards } = this.state
-    const colSpan = cards.length + 2
-    const rowHeader = this.props.previewFile ? this.props.previewFile.dataHeader : new Map()
-    const rowFooter = this.props.previewFile ? this.props.previewFile.dataFooter : new Map()
+    const rows = this.props.previewFile ? this.props.previewFile.dataHeader : new Map()
     return (
       <div>
         <Modal ref='modal'>
@@ -159,8 +157,21 @@ export default class CardContainer extends Component {
             <button onClick={this.hideModal} type='button' className='btn btn-danger'>Close</button>
           </div>
         </Modal>
-        <div style={{paddingBottom: 10, paddingTop: 10}}>
-          <form className='form-inline'>
+        <div style={{paddingBottom: 10, paddingTop: 10, width: '50%'}}>
+          <form>
+            <div className='form-group'>
+              <label>Email address</label>
+              <input type='email' className='form-control' placeholder='Email' />
+            </div>
+            <div className='form-group'>
+              <label>Password</label>
+              <input type='password' className='form-control' placeholder='Password' />
+            </div>
+            <div className='checkbox'>
+              <label>
+                <input type='checkbox' /> Check me out
+              </label>
+            </div>
             <button type='button' onClick={::this.saveMappingTemplate} className='btn btn-default'>Lưu Mapping</button>
           </form>
         </div>
@@ -168,8 +179,7 @@ export default class CardContainer extends Component {
           <table className='table table-hover'>
             <thead>
               <tr>
-                <th width='70'>Vị trí header</th>
-                <th width='70'>Vị trí dữ liệu</th>
+                <td width='30'>STT</td>
                 {cards.map((item, i) => <th width='150'>
                   <Card key={i} id={i} index={i} text={item.value} moveCard={this.moveCard}/>
                 </th>
@@ -177,23 +187,9 @@ export default class CardContainer extends Component {
               </tr>
             </thead>
             <tbody>
-              {rowHeader.map((row, idx) =>
+              {rows.map((row, idx) =>
                 <tr key={idx}>
-                  <td><input type='radio' name='headerIndex' onChange={this.onSelectHeaderIdx}
-                    value={idx}/></td>
-                  <td><input type='radio' name='dataIndex' onChange={this.onSelectDataIdx}
-                    value={idx}/></td>
-                    {row.Columns.map((cell, idx) =>
-                      <td key={idx} colSpan={cell.ColSpan} rowSpan={cell.Rowspan}>{cell.value}</td>
-                    )}
-                </tr>
-              )}
-              <tr><td colSpan={colSpan}>...</td></tr>
-              <tr><td colSpan={colSpan}>Vị trí footer</td></tr>
-              {rowFooter.map((row, idx) =>
-                <tr key={idx}>
-                  <td colSpan='2'><input type='radio' name='footerIndex' onChange={this.onSelectHeaderIdx}
-                    value={idx}/></td>
+                  <td>{idx + 1}</td>
                     {row.Columns.map((cell, idx) =>
                       <td key={idx} colSpan={cell.ColSpan} rowSpan={cell.Rowspan}>{cell.value}</td>
                     )}
