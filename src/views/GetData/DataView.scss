@@ -1,0 +1,13 @@
+div.tempView {
+  padding: 0px 20px;
+}
+
+  div.tempView tr.odd > td {
+    background: red;
+    color: #fff;
+  }
+
+  div.tempView tr.even > td {
+        background: deepskyblue;
+        color: #fff;
+  }

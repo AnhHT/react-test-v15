@@ -1,0 +1,5004 @@
+{
+  "result":{
+    "Headers":[
+      "playerID",
+      "awardID",
+      "yearID",
+      "lgID",
+      "tie",
+      "notes"
+    ],
+    "Rows":[
+      {
+        "CellValues":[
+          "bondto01",
+          "Pitching Triple Crown",
+          "1877",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "hinespa01",
+          "Triple Crown",
+          "1878",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "heckegu01",
+          "Pitching Triple Crown",
+          "1884",
+          "AA",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "radboch01",
+          "Pitching Triple Crown",
+          "1884",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "oneilti01",
+          "Triple Crown",
+          "1887",
+          "AA",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "keefeti01",
+          "Pitching Triple Crown",
+          "1888",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "clarkjo01",
+          "Pitching Triple Crown",
+          "1889",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "rusieam01",
+          "Pitching Triple Crown",
+          "1894",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "duffyhu01",
+          "Triple Crown",
+          "1894",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "youngcy01",
+          "Pitching Triple Crown",
+          "1901",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "lajoina01",
+          "Triple Crown",
+          "1901",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "wadderu01",
+          "Pitching Triple Crown",
+          "1905",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Pitching Triple Crown",
+          "1905",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lajoina01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lordha01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "crigelo01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "sullibi03",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "crawfsa01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "stonege01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "youngcy01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "wadderu01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "jossad01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "donovbi01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wallabo01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lajoina01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "devliar01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bresnro01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "klingjo01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "donlimi01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "clarkfr01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "youngcy01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "brownmo01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruckena01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "tennefr02",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "eversjo01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "devliar01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bresnro01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "klingjo01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "donlimi01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "clarkfr01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "brownmo01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruckena01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "willivi01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "reulbed01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "schulfr01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1908",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Pitching Triple Crown",
+          "1908",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lordha01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "carribi02",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "sullibi03",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "streega01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "C3"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "crawfsa01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "planked01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "mullige01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "woodjo02",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "bushdo01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lordha01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "klingjo01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "carribi02",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "gibsoge01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "C3"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "clarkfr01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "brownmo01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "adamsba01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "planked01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "P6"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chancfr01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "eversjo01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "devliar01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "klingjo01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "gibsoge01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "bresnro01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "C3"
+        ]
+      },
+      {
+        "CellValues":[
+          "leachto01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "clarkfr01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "brownmo01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "reulbed01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "camniho01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "adamsba01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "hofmaso01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1909",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Triple Crown",
+          "1909",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lajoina01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lordha01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "thomair01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "sweened01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "stonege01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "coombja01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "bendech01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wallabo01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "lajoina01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "devliar01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gibsoge01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mageesh01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "coombja01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "bendech01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chancfr01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "eversjo01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "devliar01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gibsoge01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "leachto01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mageesh01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruckena01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "coleki01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "schulfr01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1910",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bakerfr01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "thomair01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "carribi02",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "stanaos01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "C3"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "crawfsa01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "greggve01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "bendech01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "coombja01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "bushdo01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bakerfr01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bresnro01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "dooinre01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "meyerch01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "C3"
+        ]
+      },
+      {
+        "CellValues":[
+          "thomair01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "C4"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "clarkfr01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "greggve01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruckena01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "P5"
+        ]
+      },
+      {
+        "CellValues":[
+          "walshed01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "P6"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "doylela01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "loberha01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bresnro01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "dooinre01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "meyerch01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "C3"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "C4"
+        ]
+      },
+      {
+        "CellValues":[
+          "donlimi01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "clarkfr01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "marquru01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruckena01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "P4"
+        ]
+      },
+      {
+        "CellValues":[
+          "schulfr01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1911",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Most Valuable Player",
+          "1911",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "schulfr01",
+          "Most Valuable Player",
+          "1911",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "mcinnst01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gardnla01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "stanaos01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "ainsmed01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "woodjo02",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "planked01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagnehe01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "eversjo01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "zimmehe01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "meyerch01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "woodjo02",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruckena01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "eversjo01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "zimmehe01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "meyerch01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "mageesh01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "paskedo01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wilsoch01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "tesreje01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruckena01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1912",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Most Valuable Player",
+          "1912",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "doylela01",
+          "Most Valuable Player",
+          "1912",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "mcinnst01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bakerfr01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "schanwa01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "falkecy01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "barryja01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bakerfr01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "vioxji01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "zimmehe01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cravaga01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "leachto01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wheatza01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "wagneho01",
+          "Baseball Magazine All-Star",
+          "1913",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Most Valuable Player",
+          "1913",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Most Valuable Player",
+          "1913",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Pitching Triple Crown",
+          "1913",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "mcinnst01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bakerfr01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "schanwa01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "schalra01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "leonadu01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "planked01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "barryja01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bakerfr01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "schanwa01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "maranra01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "eversjo01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "loberha01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "archeji01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "C1"
+        ]
+      },
+      {
+        "CellValues":[
+          "wingoiv01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "C2"
+        ]
+      },
+      {
+        "CellValues":[
+          "burnsge01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "mageesh01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wheatza01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mathech01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "jamesbi02",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "maranra01",
+          "Baseball Magazine All-Star",
+          "1914",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Most Valuable Player",
+          "1914",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "eversjo01",
+          "Most Valuable Player",
+          "1914",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "mcinnst01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "maisefr01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "schalra01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "scottji01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "crawfsa01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "bushdo01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "mcinnst01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "snydefr01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "crawfsa01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "bancrda01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "saiervi01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "doylela01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "snydefr01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "willicy01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "CF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wheatza01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "LF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mamaual01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "cravaga01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "RF"
+        ]
+      },
+      {
+        "CellValues":[
+          "bancrda01",
+          "Baseball Magazine All-Star",
+          "1915",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Pitching Triple Crown",
+          "1915",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gardnla01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "schalra01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "bushdo01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gardnla01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "schalra01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "maranra01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "herzobu01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "hornsro01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gowdyha01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "roberda01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wheatza01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "willicy01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "mamaual01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "maranra01",
+          "Baseball Magazine All-Star",
+          "1916",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Pitching Triple Crown",
+          "1916",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "weavebu01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "schalra01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "felscha01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "cicoted01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "chapmra01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "zimmehe01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "killebi01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "chapmra01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "chaseha01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "herzobu01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "zimmehe01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "killebi01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "burnsge01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "careyma01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "coopewi01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "maranra01",
+          "Baseball Magazine All-Star",
+          "1917",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "bakerfr01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "oneilst01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "hoopeha01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "chapmra01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "killebi01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "vaughhi01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "holloch01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "cutshge01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "killebi01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "burnsge01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wheatza01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "vaughhi01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "grimebu01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "holloch01",
+          "Baseball Magazine All-Star",
+          "1918",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Pitching Triple Crown",
+          "1918",
+          "AL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "vaughhi01",
+          "Pitching Triple Crown",
+          "1918",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "weavebu01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "oneilst01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "jacksjo01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "cicoted01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "peckiro01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "oneilst01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "johnswa01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "vaughhi01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "peckiro01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "stockmi01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "wingoiv01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "burnsge01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "myershy01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "vaughhi01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "barneje01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "hornsro01",
+          "Baseball Magazine All-Star",
+          "1919",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gardnla01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "oneilst01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "ricesa01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "bagbyji01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "covelst01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "shockur01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "scottev01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "AL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "oneilst01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "bagbyji01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "grimebu01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "maranra01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "ML",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "daubeja01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "hornsro01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "grohhe01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "schmiwa01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "roushed01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "wheatza01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "youngro01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "grimebu01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "coopewi01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "maranra01",
+          "Baseball Magazine All-Star",
+          "1920",
+          "NL",
+          "",
+          "SS"
+        ]
+      },
+      {
+        "CellValues":[
+          "alexape01",
+          "Pitching Triple Crown",
+          "1920",
+          "NL",
+          "",
+          ""
+        ]
+      },
+      {
+        "CellValues":[
+          "sislege01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "1B"
+        ]
+      },
+      {
+        "CellValues":[
+          "collied01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "2B"
+        ]
+      },
+      {
+        "CellValues":[
+          "gardnla01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "3B"
+        ]
+      },
+      {
+        "CellValues":[
+          "oneilst01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "C"
+        ]
+      },
+      {
+        "CellValues":[
+          "cobbty01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "ruthba01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "speaktr01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "OF"
+        ]
+      },
+      {
+        "CellValues":[
+          "faberre01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "P1"
+        ]
+      },
+      {
+        "CellValues":[
+          "maysca01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "P2"
+        ]
+      },
+      {
+        "CellValues":[
+          "shockur01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "P3"
+        ]
+      },
+      {
+        "CellValues":[
+          "peckiro01",
+          "Baseball Magazine All-Star",
+          "1921",
+          "AL",
+          "",
+          "SS"
+        ]
+      }
+    ]
+  }
+}
