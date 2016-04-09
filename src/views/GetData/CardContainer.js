@@ -3,7 +3,7 @@ import update from 'react/lib/update'
 import Card from './Card'
 import { DragDropContext } from 'react-dnd'
 import HTML5Backend from 'react-dnd-html5-backend'
-import Modal from 'boron/DropModal'
+import MessageDialog from '../../components/Message/MessageDialog'
 
 const EMPTY_VAL = '????'
 
@@ -28,7 +28,8 @@ export default class CardContainer extends Component {
       headerIndex: -1,
       dataIndex: -1,
       footerIndex: -1,
-      message: '?'
+      message: '?',
+      modalIsOpen: false
     }
   }
 
@@ -82,27 +83,27 @@ export default class CardContainer extends Component {
   }
 
   hideModal () {
-    this.refs.modal.hide()
+    this.setState({modalIsOpen: false})
   }
 
   saveMappingTemplate () {
     if (this.state.headerIndex === -1) {
       this.setState({message: 'Chưa chọn vị trí của header'}, () => {
-        this.refs.modal.show()
+        this.setState({modalIsOpen: true})
       })
       return
     }
 
     if (this.state.dataIndex === -1) {
       this.setState({message: 'Chưa chọn vị trí của dữ liệu'}, () => {
-        this.refs.modal.show()
+        this.setState({modalIsOpen: true})
       })
       return
     }
 
     if (this.state.footerIndex === -1) {
       this.setState({message: 'Chưa chọn vị trí của footer'}, () => {
-        this.refs.modal.show()
+        this.setState({modalIsOpen: true})
       })
       return
     }
@@ -143,20 +144,8 @@ export default class CardContainer extends Component {
     const rows = this.props.previewFile ? this.props.previewFile.dataHeader : new Map()
     return (
       <div>
-        <Modal ref='modal'>
-          <div className='modal-header'>
-            <button type='button' className='close' onClick={this.hideModal}>
-              <span aria-hidden='true'>&times;</span>
-            </button>
-            <h4 className='modal-title'>Warning</h4>
-          </div>
-          <div className='modal-body'>
-            <p>{this.state.message}</p>
-          </div>
-          <div className='modal-footer'>
-            <button onClick={this.hideModal} type='button' className='btn btn-danger'>Close</button>
-          </div>
-        </Modal>
+        <MessageDialog modalIsOpen={this.state.modalIsOpen} message={this.state.message}
+          hideModal={this.hideModal} />
         <div style={{paddingBottom: 10, paddingTop: 10, width: '50%'}}>
           <form>
             <div className='form-group'>
