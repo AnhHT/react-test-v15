@@ -70,6 +70,10 @@ export default class DataView extends Component {
     }
   }
 
+  handleCheckbox (e) {
+    console.log(e)
+  }
+
   handleFile (e) {
     let formData = new FormData()
     let file = e.target.files[0]
@@ -88,12 +92,41 @@ export default class DataView extends Component {
       <div className={classes.tempView}>
         <div style={{paddingBottom: 10, paddingTop: 10, width: '50%'}}>
           <form encType='multipart/form-data'>
+            <div className='form-group' style={{paddingRight: 10}}>
+              <input type='file' onChange={::this.handleFile} className='form-control'/>
+            </div>
+            <div className='radio'>
+              <label className='radio-inline'>
+                <input type='radio' name='objectType' value='dv'/>Đơn vị
+              </label>
+              <label className='radio-inline'>
+                <input type='radio' name='objectType' value='cn'/>Cá nhân
+              </label>
+            </div>
+            <div className='checkbox'>
+              <label>
+                <input type='checkbox' name='isCalculate' />Có tổng hợp vào đơn vị ?
+              </label>
+            </div>
+            <div className='radio'>
+              <label className='radio-inline'>
+                <input type='radio' name='calculateType' value='sum'/>Tính tổng
+              </label>
+              <label className='radio-inline'>
+                <input type='radio' name='calculateType' value='avg'/>Tính trung bình
+              </label>
+            </div>
+            <div className='radio'>
+              <label className='radio-inline'>
+                <input type='radio' name='objectName' value='sum'/>Tự động
+              </label>
+              <label className='radio-inline'>
+                <input type='radio' name='objectName' value='avg'/>Manual
+              </label>
+            </div>
             <div className='form-group'>
               <Select multi simpleValue value={this.state.value} placeholder='Select field'
                 options={this.state.fieldList} onChange={this.handleSelectChange} />
-            </div>
-            <div className='form-group' style={{paddingRight: 10}}>
-              <input type='file' onChange={::this.handleFile} className='form-control'/>
             </div>
             <button type='button' onClick={::this.handleSubmit} className='btn btn-default'>Upload</button>
           </form>
