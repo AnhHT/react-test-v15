@@ -22,6 +22,10 @@ export const FETCH_FIELDS_REQUEST = 'FETCH_FIELDS_REQUEST'
 export const FETCH_FIELDS_SUCCESS = 'FETCH_FIELDS_SUCCESS'
 export const FETCH_FIELDS_FAIL = 'FETCH_FIELDS_FAIL'
 
+export const FETCH_TREE_REQUEST = 'FETCH_TREE_REQUEST'
+export const FETCH_TREE_SUCCESS = 'FETCH_TREE_SUCCESS'
+export const FETCH_TREE_FAIL = 'FETCH_TREE_FAIL'
+
 export const getHeaderRequest = createAction(FETCH_HEADER_REQUEST, (data) => data)
 export const getHeaderSuccess = createAction(FETCH_HEADER_SUCCESS, (data) => data)
 export const getHeaderFail = createAction(FETCH_HEADER_FAIL, (data) => data)
@@ -38,6 +42,10 @@ export const getFieldsRequest = createAction(FETCH_FIELDS_REQUEST, (data) => dat
 export const getFieldsSuccess = createAction(FETCH_FIELDS_SUCCESS, (data) => data)
 export const getFieldsFail = createAction(FETCH_FIELDS_FAIL, (data) => data)
 
+export const getTreeRequest = createAction(FETCH_TREE_REQUEST, (data) => data)
+export const getTreeSuccess = createAction(FETCH_TREE_SUCCESS, (data) => data)
+export const getTreeFail = createAction(FETCH_TREE_FAIL, (data) => data)
+
 const initialState = Immutable.fromJS({
   myCollection: null,
   mappingHeader: null,
@@ -50,7 +58,10 @@ const initialState = Immutable.fromJS({
   isParsed: false,
   mappingFields: null,
   isFetchFields: false,
-  isFetchingFields: false
+  isFetchingFields: false,
+  treeData: null,
+  isFetchTree: false,
+  isFetchingTree: false
 })
 
 export function getFields () {
@@ -157,8 +168,36 @@ export function parseXlsx (data) {
   }
 }
 
+export function getTreeData () {
+  return (dispatch, getState) => {
+    dispatch(getTreeRequest())
+    return fetch('/data-tree.json', {
+      method: 'GET',
+      mode: 'cors'
+    }).then(checkHttpStatus)
+      .then(parseJSON)
+      .then((response) => {
+        try {
+          dispatch(getTreeSuccess(response))
+        } catch (e) {
+          console.log(e)
+          dispatch(getTreeFail({
+            status: 403,
+            statusText: e.message
+          }))
+        }
+      })
+      .catch((error) => {
+        dispatch(getTreeFail({
+          status: 401,
+          statusText: error.message
+        }))
+      })
+  }
+}
+
 // Action Creators
-export const actions = { getFields, getMappingHeader, uploadFile, parseXlsx }
+export const actions = { getFields, getMappingHeader, uploadFile, parseXlsx, getTreeData }
 
 export default handleActions({
   [FETCH_FIELDS_REQUEST]: (state, { payload }) => {
@@ -241,6 +280,27 @@ export default handleActions({
       isParsing: false,
       isParsed: false,
       statusText: payload.statusText
+    }
+  },
+  [FETCH_TREE_REQUEST]: (state, { payload }) => {
+    return {...state,
+      isFetchingTree: true,
+      isFetchTree: false
+    }
+  },
+  [FETCH_TREE_SUCCESS]: (state, { payload }) => {
+    return {...state,
+      isFetchingTree: false,
+      isFetchTree: true,
+      treeData: payload
+    }
+  },
+  [FETCH_TREE_FAIL]: (state, { payload }) => {
+    return {...state,
+      isFetchTree: false,
+      isFetchingTree: false,
+      statusText: payload.statusText,
+      treeData: null
     }
   }
 }, initialState)
