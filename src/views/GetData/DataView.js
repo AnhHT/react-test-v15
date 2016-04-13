@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react'
-import CardContainer from './CardContainer'
+import MappingView from './MappingView'
 import {actions as manageData} from '../../redux/modules/Todos'
 import {connect} from 'react-redux'
 import classes from './DataView.scss'
@@ -50,13 +50,13 @@ export default class DataView extends Component {
 
   render () {
     let key = 1
-    const data = this.props.isUploaded ? (<CardContainer key={key} previewFile={this.props.data}
+    const data = this.props.isUploaded ? (<MappingView key={key} previewFile={this.props.data}
       getFields={this.props.getFields} fields={this.props.mappingFields} parseXlsx={this.props.parseXlsx}
       isFetch={this.props.isFetchFields}/>) : (this.props.isUploading ? <div>loading...</div> : <div></div>)
     return (
       <div className={classes.tempView}>
         <div style={{paddingBottom: 10, paddingTop: 10, width: '50%'}}>
-          <form encType='multipart/form-data'>
+          <form encType='multipart/form-data' className='form-inline'>
             <div className='form-group' style={{paddingRight: 10}}>
               <input type='file' onChange={::this.handleFile} className='form-control'/>
             </div>
