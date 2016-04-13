@@ -21,7 +21,7 @@ export default class CardContainer extends Component {
             <tr>
               <td width='30'>STT</td>
               {cards.map((item, i) =>
-                <th width='150'>
+                <th width='150' style={{opacity: item.Id === -1 ? 0.5 : 1}}>
                   <Card key={i} id={i} index={i} text={item.value} moveCard={moveCard}/>
                 </th>
               )}

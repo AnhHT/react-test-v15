@@ -26,6 +26,16 @@ export default class MessageDialog extends Component {
   }
 
   render () {
+    let errMsg
+    if (this.props.message.indexOf(',') > -1) {
+      let temp = this.props.message.split(',')
+      errMsg = (<div className='modal-body'>{temp.map((msg, idx) =>
+        <p key={idx} className='alert alert-danger'>{msg}</p>)}
+      </div>)
+    } else {
+      errMsg = <div className='modal-body'><p className='alert alert-danger'>{this.props.message}</p></div>
+    }
+
     return (
       <Modal className='Modal__Bootstrap modal-dialog' isOpen={this.props.modalIsOpen}
         onRequestClose={this.props.hideModal} shouldCloseOnOverlayClick={false}
@@ -35,11 +45,9 @@ export default class MessageDialog extends Component {
             <button type='button' className='close' onClick={this.props.hideModal}>
               <span aria-hidden='true'>&times;</span>
             </button>
-            <h4 className='modal-title'>Warning</h4>
+            <h4 className='modal-title'>Lỗi nhập dữ liệu</h4>
           </div>
-          <div className='modal-body'>
-            <p>{this.props.message}</p>
-          </div>
+          {errMsg}
           <div className='modal-footer'>
             <button onClick={this.props.hideModal} type='button' className='btn btn-danger'>Close</button>
           </div>

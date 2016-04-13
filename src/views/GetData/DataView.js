@@ -28,7 +28,8 @@ export default class DataView extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      fileData: null
+      fileData: null,
+      uploadStep1: 'Chọn một file Excel định dạng .xlsx !'
     }
   }
 
@@ -36,6 +37,9 @@ export default class DataView extends Component {
     e.preventDefault()
     if (this.state.fileData) {
       this.props.uploadFile(this.state.fileData)
+      this.setState({uploadStep1: ''})
+    } else {
+      this.setState({uploadStep1: 'Hãy chọn một file Excel định dạng .xlsx !'})
     }
   }
 
@@ -44,7 +48,7 @@ export default class DataView extends Component {
     let file = e.target.files[0]
     formData.append('rawFile', file)
     this.setState({fileData: formData}, () => {
-      console.log(this.state)
+      this.setState({uploadStep1: 'Bấm nút Upload để tiếp tục công việc.'})
     })
   }
 
@@ -53,9 +57,11 @@ export default class DataView extends Component {
     const data = this.props.isUploaded ? (<MappingView key={key} previewFile={this.props.data}
       getFields={this.props.getFields} fields={this.props.mappingFields} parseXlsx={this.props.parseXlsx}
       isFetch={this.props.isFetchFields}/>) : (this.props.isUploading ? <div>loading...</div> : <div></div>)
+    const step1Class = `alert alert-info ${this.state.uploadStep1.length ? '' : 'hide'}`
     return (
       <div className={classes.tempView}>
         <div style={{paddingBottom: 10, paddingTop: 10, width: '50%'}}>
+          <div className={step1Class}>{this.state.uploadStep1}</div>
           <form encType='multipart/form-data' className='form-inline'>
             <div className='form-group' style={{paddingRight: 10}}>
               <input type='file' onChange={::this.handleFile} className='form-control'/>

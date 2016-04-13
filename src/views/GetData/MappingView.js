@@ -1,42 +1,24 @@
 import React, {Component, PropTypes} from 'react'
-import Select from 'react-select'
 import update from 'react/lib/update'
 import MessageDialog from '../../components/Message/MessageDialog'
 import CardContainer from './CardContainer'
+import MappingForm from './MappingForm'
 
-const EMPTY_VAL = '????'
+const EMPTY_VAL = 'EMPTY_SLOT'
 const DEFAULT_A_COL_ID = -999
 const DEFAULT_B_COL_ID = -998
 const DEFAULT_C_COL_ID = -997
 const DEFAULT_CARD = [{value: 'Đối tượng', Id: DEFAULT_A_COL_ID}, {value: 'Thời Gian', Id: DEFAULT_C_COL_ID}]
 
 const getFieldsName = (fieldList, selectedFields) => {
-  let temp = fieldList.filter((item) => {
-    return selectedFields.indexOf(`${item.Id}`) > -1
-  })
-
-  temp = temp.map((item) => {
-    return `${item.Name} | `
-  }).join('')
-
-  return temp.substring(0, temp.length - 2)
-}
-
-const getCards = (fields, selectedFields, dataHeader) => {
-  if (selectedFields && selectedFields.length) {
-    let cards = [...DEFAULT_CARD, {value: getFieldsName(fields, selectedFields), Id: DEFAULT_B_COL_ID}]
-    let tempIdx = Math.round((dataHeader.length / 2) + 1)
-    let temp = dataHeader[tempIdx].Columns.length
-    if (cards.length < temp) {
-      for (let i = cards.length; i < temp; i++) {
-        cards = [...cards, {value: EMPTY_VAL, Id: -1}]
-      }
+  let temp = ''
+  for (let i = 0; i < fieldList.length; i++) {
+    if (selectedFields.indexOf(`${fieldList[i].Id}`) > -1) {
+      temp = `${temp} ${fieldList[i].Name} | `
     }
-
-    return cards
   }
 
-  return DEFAULT_CARD
+  return temp.substring(0, temp.length - 2)
 }
 
 const getCardIndex = (cards, id) => {
@@ -50,11 +32,28 @@ const getCardIndex = (cards, id) => {
 }
 
 const getHeaderAddress = (columns, idx) => {
-  if (idx !== -1 && idx < columns.length) {
+  if (idx > -1 && idx < columns.length) {
     return columns[idx].Address
   }
 
   return EMPTY_VAL
+}
+
+const validateForm = (formField) => {
+  let errors = []
+  if (formField.headerIndex < 1) {
+    errors = [...errors, 'Chưa chọn vị trí của header !']
+  }
+
+  if (formField.dataIndex <= formField.headerIndex) {
+    errors = [...errors, 'Chưa chọn vị trí của dữ liệu !']
+  }
+
+  if (formField.footerIndex !== 0 && formField.footerIndex <= formField.dataIndex) {
+    errors = [...errors, 'Chưa chọn vị trí kết thúc dữ liệu !']
+  }
+
+  return errors
 }
 
 export default class MappingView extends Component {
@@ -76,20 +75,37 @@ export default class MappingView extends Component {
     this.handleCheckBoxChange = this.handleCheckBoxChange.bind(this)
     this.saveMappingTemplate = this.saveMappingTemplate.bind(this)
     this.state = {
-      cards: [],
-      headerIndex: this.props.previewFile.HeaderIndex,
-      dataIndex: this.props.previewFile.DataIndex,
-      footerIndex: this.props.previewFile.FooterIndex,
-      templateId: this.props.previewFile.Id,
-      message: '?',
-      modalIsOpen: false,
+      cards: [...DEFAULT_CARD],
       selectedFields: [],
-      hasCalculateForOffice: false
+      selectedFieldsName: [],
+      formField: {
+        headerIndex: this.props.previewFile.HeaderIndex,
+        dataIndex: this.props.previewFile.DataIndex,
+        footerIndex: this.props.previewFile.FooterIndex,
+        templateId: this.props.previewFile.Id,
+        hasCalculateForOffice: this.props.previewFile.HasCalculateForOffice,
+        objectNameType: this.props.previewFile.ObjectNameType,
+        objectType: this.props.previewFile.ObjectType,
+        calculateType: this.props.previewFile.CalculateType
+      },
+      message: '?',
+      modalIsOpen: false
     }
   }
 
   componentWillMount () {
     this.props.getFields()
+    const {previewFile} = this.props
+    let {cards} = this.state
+    let tempIdx = Math.round((previewFile.dataHeader.length / 2) + 1)
+    let temp = previewFile.dataHeader[tempIdx].Columns.length
+    if (cards.length < temp) {
+      for (let i = cards.length; i < temp; i++) {
+        cards = [...cards, {value: EMPTY_VAL, Id: -1}]
+      }
+
+      this.setState({cards: [...cards]})
+    }
   }
 
   moveCard (dragIndex, hoverIndex) {
@@ -106,64 +122,69 @@ export default class MappingView extends Component {
   }
 
   handleInputIndex (e) {
-    this.setState({[e.target.name]: parseInt(e.target.value)})
+    let temp = e.target.value
+    if (!temp || !temp.length) {
+      temp = 0
+    }
+
+    this.setState({formField: {...this.state.formField,
+        [e.target.name]: parseInt(temp)
+    }})
   }
 
   hideModal () {
     this.setState({modalIsOpen: false})
   }
 
-  handleSelectChange (value, text) {
+  handleSelectChange (value) {
     this.setState({ selectedFields: value }, () => {
-      const { fields, previewFile } = this.props
-      this.setState({cards: [...getCards(fields, this.state.selectedFields, previewFile.dataHeader)]})
+      const { fields } = this.props
+      let temp = {value: getFieldsName(fields, this.state.selectedFields), Id: DEFAULT_B_COL_ID}
+      let cards = this.state.cards
+      cards = [...cards.slice(0, 2), temp, ...cards.slice(3, cards.length)]
+      this.setState({cards: cards})
     })
   }
 
   handleCheckBoxChange (e) {
-    this.setState({hasCalculateForOffice: e.target.checked})
+    this.setState({formField: {...this.state.formField,
+      hasCalculateForOffice: (e.target.checked ? 1 : 0)
+    }})
   }
 
-  saveMappingTemplate () {
-    let {headerIndex, dataIndex, footerIndex, templateId, cards
-          , hasCalculateForOffice, selectedFields} = this.state
+  saveMappingTemplate (e) {
+    let {formField, cards, selectedFields} = this.state
+    if (!selectedFields || !selectedFields.length) {
+      this.setState({message: 'Hãy chọn mapping-field !', modalIsOpen: true})
+      return
+    }
+
     let {previewFile} = this.props
-
-    if (headerIndex < 1) {
-      this.setState({message: 'Chưa chọn vị trí của header'}, () => {
-        this.setState({modalIsOpen: true})
-      })
+    let errors = validateForm(formField)
+    if (errors.length) {
+      let msg = errors.join(',')
+      this.setState({message: msg, modalIsOpen: true})
       return
     }
 
-    if (dataIndex <= headerIndex) {
-      this.setState({message: 'Chưa chọn vị trí của dữ liệu'}, () => {
-        this.setState({modalIsOpen: true})
-      })
+    let headers = previewFile.dataHeader[formField.headerIndex]
+    let objectMapAddr = getHeaderAddress(headers.Columns, getCardIndex(cards, DEFAULT_A_COL_ID))
+    let objectTimeAddr = getHeaderAddress(headers.Columns, getCardIndex(cards, DEFAULT_C_COL_ID))
+    let tempAddr = getHeaderAddress(headers.Columns, getCardIndex(cards, DEFAULT_B_COL_ID))
+    if (objectMapAddr === EMPTY_VAL || objectTimeAddr === EMPTY_VAL || tempAddr === EMPTY_VAL) {
+      this.setState({message: 'Vị trí của header chưa đúng !', modalIsOpen: true})
       return
     }
 
-    if (footerIndex < 0) {
-      this.setState({message: 'Chưa chọn vị trí của footer'}, () => {
-        this.setState({modalIsOpen: true})
-      })
-      return
-    }
-
-    let headers = previewFile.dataHeader[headerIndex]
     let objectMap = {
-      col: getHeaderAddress(headers.Columns, getCardIndex(cards, DEFAULT_A_COL_ID)),
+      col: objectMapAddr,
       coldb: 'Đối tượng'
     }
 
     let objectTime = {
-      col: getHeaderAddress(headers.Columns, getCardIndex(cards, DEFAULT_C_COL_ID)),
+      col: objectTimeAddr,
       coldb: 'Thời gian'
     }
-
-    let tempAddr = getHeaderAddress(headers.Columns, getCardIndex(cards, DEFAULT_B_COL_ID))
-    console.log(tempAddr)
-    console.log(selectedFields)
 
     let map = []
     selectedFields.split(',').map((item) => {
@@ -171,28 +192,26 @@ export default class MappingView extends Component {
         col: tempAddr,
         coldb: 'C',
         FieldId: parseInt(item),
-        ObjectType: 0,
-        HasCalculateForOffice: hasCalculateForOffice,
-        CalculateType: 0,
-        ObjectNameType: 0
+        ObjectType: formField.objectType,
+        HasCalculateForOffice: formField.hasCalculateForOffice,
+        CalculateType: formField.calculateType,
+        ObjectNameType: formField.objectNameType
       }]
     })
 
-    console.log(map)
-
     let temp = {
-      TemplateId: templateId,
+      TemplateId: formField.templateId,
       FileDataName: previewFile.FileDataName,
-      HeaderIndex: headerIndex,
-      DataIndex: dataIndex,
-      FooterIndex: footerIndex,
+      HeaderIndex: formField.headerIndex,
+      DataIndex: formField.dataIndex,
+      FooterIndex: formField.footerIndex,
       Map: map,
-      ObjectType: 0,
-      HasCalculateForOffice: hasCalculateForOffice,
-      CalculateType: 0,
-      ObjectNameType: 0,
       ObjectMap: objectMap,
-      ObjectTime: objectTime
+      ObjectTime: objectTime,
+      HasCalculateForOffice: formField.hasCalculateForOffice,
+      ObjectType: formField.objectType,
+      CalculateType: formField.calculateType,
+      ObjectNameType: formField.objectNameType
     }
 
     console.log(temp)
@@ -201,91 +220,27 @@ export default class MappingView extends Component {
 
   render () {
     const { isFetch, fields, previewFile } = this.props
-
     let fieldList = []
     if (isFetch) {
       fieldList = fields.map((item) => {
-        return {label: item.Name, value: `${item.Id}`, ...item}
+        return {label: item.Name, value: `${item.Id}`}
       })
     }
-
-    const tblResponsive = this.state.selectedFields && this.state.selectedFields.length ? (
-      <CardContainer key={previewFile.Id} rows={previewFile.dataHeader} cards={this.state.cards}
-        moveCard={this.moveCard}/>) : ''
-
-    const calculationSection = this.state.hasCalculateForOffice ? (
-      <div className='radio'>
-        <label className='radio-inline'>
-          <input type='radio' name='calculateType' value='0'/>Tính tổng
-        </label>
-        <label className='radio-inline'>
-          <input type='radio' name='calculateType' value='1'/>Tính trung bình
-        </label>
-      </div>
-    ) : ''
-
-    const indiceSection = this.state.selectedFields && this.state.selectedFields.length ? (
-      <div className='form-group'>
-        <div className='row'>
-          <div className='col-xs-6 col-sm-4'><label>Vị trí header</label></div>
-          <div className='col-xs-6 col-sm-4'><label>Vị trí dữ liệu</label></div>
-          <div className='col-xs-6 col-sm-4'><label>Vị trí kết thúc dữ liệu</label></div>
-        </div>
-        <div className='row'>
-          <div className='col-xs-6 col-sm-4'>
-            <input type='text' value={this.state.headerIndex} name='headerIndex' onChange={this.handleInputIndex}
-              className='form-control'/>
-          </div>
-          <div className='col-xs-6 col-sm-4'>
-            <input type='text' value={this.state.dataIndex} name='dataIndex' onChange={this.handleInputIndex}
-              className='form-control'/>
-          </div>
-          <div className='col-xs-6 col-sm-4'>
-            <input type='text' value={this.state.footerIndex} name='footerIndex' onChange={this.handleInputIndex}
-              className='form-control'/>
-          </div>
-        </div>
-      </div>
-    ) : ''
 
     return (
       <div>
         <MessageDialog modalIsOpen={this.state.modalIsOpen} message={this.state.message}
           hideModal={this.hideModal} />
         <div style={{paddingBottom: 10, paddingTop: 10, width: '50%'}}>
-          <form>
-            <div className='radio'>
-              <label className='radio-inline'>
-                <input type='radio' name='objectType' value='0'/>Đơn vị
-              </label>
-              <label className='radio-inline'>
-                <input type='radio' name='objectType' value='1'/>Cá nhân
-              </label>
-            </div>
-            <div className='checkbox'>
-              <label>
-                <input type='checkbox' name='hasCalculateForOffice'
-                  onChange={this.handleCheckBoxChange}/>Có tổng hợp vào đơn vị ?
-              </label>
-            </div>
-            {calculationSection}
-            <div className='radio'>
-              <label className='radio-inline'>
-                <input type='radio' name='objectNameType' value='0'/>Tự động
-              </label>
-              <label className='radio-inline'>
-                <input type='radio' name='objectNameType' value='1'/>Manual
-              </label>
-            </div>
-            <div className='form-group'>
-              <Select multi simpleValue value={this.state.selectedFields} placeholder='Chọn field'
-                options={fieldList} onChange={this.handleSelectChange} />
-            </div>
-            {indiceSection}
+          <form onSubmit={this.saveMappingTemplate} onChange={this.handleInputIndex}>
+            <MappingForm formField={this.state.formField} fieldList={fieldList}
+              selectedFields={this.state.selectedFields} handleInputIndex={this.handleInputIndex}
+              handleCheckBoxChange={this.handleCheckBoxChange} handleSelectChange={this.handleSelectChange} />
             <button type='button' onClick={this.saveMappingTemplate} className='btn btn-default'>Lưu Mapping</button>
           </form>
         </div>
-        {tblResponsive}
+        <CardContainer key={previewFile.Id} rows={previewFile.dataHeader} cards={this.state.cards}
+          moveCard={this.moveCard}/>
       </div>
     )
   }
