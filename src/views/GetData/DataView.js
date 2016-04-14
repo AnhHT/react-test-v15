@@ -54,9 +54,11 @@ export default class DataView extends Component {
 
   render () {
     let key = 1
-    const data = this.props.isUploaded ? (<MappingView key={key} previewFile={this.props.data}
-      getFields={this.props.getFields} fields={this.props.mappingFields} parseXlsx={this.props.parseXlsx}
-      isFetch={this.props.isFetchFields}/>) : (this.props.isUploading ? <div>loading...</div> : <div></div>)
+    const {isUploading, isUploaded, data, getFields, mappingFields, parseXlsx, isFetchFields} = this.props
+    const mappingView = (isUploaded && data) ? (
+      <MappingView key={key} previewFile={data} getFields={getFields} fields={mappingFields}
+        parseXlsx={parseXlsx} isFetch={isFetchFields}/>)
+      : (isUploading ? <div>loading...</div> : <div></div>)
     const step1Class = `alert alert-info ${this.state.uploadStep1.length ? '' : 'hide'}`
     return (
       <div className={classes.tempView}>
@@ -70,7 +72,7 @@ export default class DataView extends Component {
           </form>
         </div>
         <div>
-          {data}
+          {mappingView}
         </div>
       </div>
     )

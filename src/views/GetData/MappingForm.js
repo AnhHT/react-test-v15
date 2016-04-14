@@ -1,58 +1,106 @@
 import React, {Component, PropTypes} from 'react'
 import Select from 'react-select'
+import {CallbackType} from './CallbackType'
+
+const validateForm = (state) => {
+  let errors = []
+  if (!state.selectedFields || !state.selectedFields.length) {
+    errors = [...errors, 'Hãy chọn mapping-field !']
+  }
+
+  if (state.headerIndex < 1) {
+    errors = [...errors, 'Chưa chọn vị trí của header !']
+  }
+
+  if (state.dataIndex <= state.headerIndex) {
+    errors = [...errors, 'Chưa chọn vị trí đọc dữ liệu !']
+  }
+
+  if (state.footerIndex !== 0 && state.footerIndex <= state.dataIndex) {
+    errors = [...errors, 'Vị trí kết thúc phải lớn hơn vị trí đọc dữ liệu !']
+  }
+
+  return errors
+}
 
 export default class MappingForm extends Component {
   static propTypes = {
-    formField: PropTypes.object,
     fieldList: PropTypes.array,
-    selectedFields: PropTypes.string,
-    handleCheckBoxChange: PropTypes.func.isRequired,
-    handleSelectChange: PropTypes.func.isRequired
+    previewFileObj: PropTypes.object,
+    callback: PropTypes.func
+  }
+
+  constructor (props) {
+    super(props)
+    this.handleSelectChange = this.handleSelectChange.bind(this)
+    this.saveMappingTemplate = this.saveMappingTemplate.bind(this)
+    this.handleInputChange = this.handleInputChange.bind(this)
+    this.state = {
+      selectedFields: props.previewFileObj.SelectedValues.map((item) => { return `${item.FieldId}` }),
+      headerIndex: props.previewFileObj.HeaderIndex,
+      dataIndex: props.previewFileObj.DataIndex,
+      footerIndex: props.previewFileObj.FooterIndex,
+      templateId: props.previewFileObj.Id,
+      objectType: props.previewFileObj.ObjectType
+    }
+  }
+
+  handleInputChange (e) {
+    if (e.target.name === 'hasCalculateForOffice') {
+      this.setState({hasCalculateForOffice: (e.target.checked ? 1 : 0)})
+    } else {
+      let temp = e.target.value
+      if (!temp || !temp.length) {
+        temp = 0
+      }
+
+      this.setState({[e.target.name]: parseInt(temp)})
+    }
+  }
+
+  handleSelectChange (value) {
+    const { fieldList, callback, previewFileObj } = this.props
+    if (!value) {
+      value = []
+    } else if (value.split(',').length > (previewFileObj.MaxSelectedValues - 2)) {
+      callback(CallbackType.VALIDATE_ERROR, 'Số lượng mapping-field không được vượt quá giới hạn bảng mẫu !')
+      return
+    }
+
+    this.setState({ selectedFields: value })
+    const selectedFieldsObject = fieldList.filter((item) => {
+      return value.indexOf(item.value) > -1
+    })
+
+    callback(CallbackType.AUTO_COMPLETE_CHANGE, {
+      selectedFields: value,
+      selectedFieldsObject: selectedFieldsObject
+    })
+  }
+
+  saveMappingTemplate (e) {
+    const {callback} = this.props
+    const errors = validateForm(this.state)
+    if (errors.length) {
+      callback(CallbackType.VALIDATE_ERROR, errors.join(','))
+      return
+    }
+
+    callback(CallbackType.SAVE_FORM, this.state)
   }
 
   render () {
-    const {formField, fieldList, selectedFields, handleCheckBoxChange, handleSelectChange} = this.props
-    const calculationSection = formField.hasCalculateForOffice ? (
-      <div className='radio'>
-        <label className='radio-inline'>
-          <input type='radio' name='calculateType' value='0'
-            checked={formField.calculateType === 0 ? 'true' : ''}/>Tính tổng
-        </label>
-        <label className='radio-inline'>
-          <input type='radio' name='calculateType' value='1'
-            checked={formField.calculateType === 1 ? 'true' : ''}/>Tính trung bình
-        </label>
-      </div>
-    ) : ''
-
+    const {fieldList} = this.props
     return (
-      <div>
+      <form onSubmit={this.saveMappingTemplate} onChange={this.handleInputChange}>
         <div className='radio'>
           <label className='radio-inline'>
             <input type='radio' name='objectType' value='0'
-              checked={formField.objectType === 0 ? 'true' : ''}/>Đơn vị
+              checked={this.state.objectType === 0 ? 'true' : ''}/>Đơn vị
           </label>
           <label className='radio-inline'>
             <input type='radio' name='objectType' value='1'
-              checked={formField.objectType === 1 ? 'true' : ''}/>Cá nhân
-          </label>
-        </div>
-        <div className='checkbox'>
-          <label>
-            <input type='checkbox' name='hasCalculateForOffice'
-              checked={formField.hasCalculateForOffice ? 'true' : ''}
-              onChange={handleCheckBoxChange} />Có tổng hợp vào đơn vị ?
-          </label>
-        </div>
-        {calculationSection}
-        <div className='radio'>
-          <label className='radio-inline'>
-            <input type='radio' name='objectNameType' value='0'
-              checked={formField.objectNameType === 0 ? 'true' : ''}/>Tự động
-          </label>
-          <label className='radio-inline'>
-            <input type='radio' name='objectNameType' value='1'
-              checked={formField.objectNameType === 1 ? 'true' : ''}/>Manual
+              checked={this.state.objectType === 1 ? 'true' : ''}/>Cá nhân
           </label>
         </div>
         <div className='form-group'>
@@ -63,24 +111,25 @@ export default class MappingForm extends Component {
           </div>
           <div className='row'>
             <div className='col-xs-6 col-sm-4'>
-              <input type='text' value={formField.headerIndex} name='headerIndex'
+              <input type='text' value={this.state.headerIndex} name='headerIndex'
                 className='form-control'/>
             </div>
             <div className='col-xs-6 col-sm-4'>
-              <input type='text' value={formField.dataIndex} name='dataIndex'
+              <input type='text' value={this.state.dataIndex} name='dataIndex'
                 className='form-control'/>
             </div>
             <div className='col-xs-6 col-sm-4'>
-              <input type='text' value={formField.footerIndex} name='footerIndex'
+              <input type='text' value={this.state.footerIndex} name='footerIndex'
                 className='form-control'/>
             </div>
           </div>
         </div>
         <div className='form-group'>
-          <Select multi simpleValue value={selectedFields} placeholder='Chọn field'
-            options={fieldList} onChange={handleSelectChange} />
+          <Select multi simpleValue value={this.state.selectedFields} placeholder='Chọn field'
+            options={fieldList} onChange={this.handleSelectChange} />
         </div>
-      </div>
+        <button type='button' onClick={this.saveMappingTemplate} className='btn btn-default'>Lưu Mapping</button>
+      </form>
     )
   }
 }
