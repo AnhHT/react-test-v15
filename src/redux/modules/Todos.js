@@ -52,6 +52,7 @@ const initialState = Immutable.fromJS({
   isFetchHeader: false,
   isFetchingHeader: false,
   statusText: null,
+  status: 0,
   isUploaded: false,
   isUploading: false,
   isParsing: false,
@@ -210,6 +211,7 @@ export default handleActions({
     return {...state,
       isFetchingFields: false,
       isFetchFields: true,
+      status: 200,
       mappingFields: payload
     }
   },
@@ -218,6 +220,7 @@ export default handleActions({
       isFetchingFields: false,
       isFetchFields: false,
       statusText: payload.statusText,
+      status: payload.status,
       mappingFields: null
     }
   },
@@ -231,6 +234,7 @@ export default handleActions({
     return {...state,
       isFetchingHeader: false,
       isFetchHeader: true,
+      status: 200,
       mappingHeader: payload
     }
   },
@@ -239,6 +243,7 @@ export default handleActions({
       isFetchingHeader: false,
       isFetchHeader: false,
       statusText: payload.statusText,
+      status: payload.status,
       mappingHeader: null
     }
   },
@@ -252,6 +257,7 @@ export default handleActions({
     return {...state,
       isUploading: false,
       isUploaded: true,
+      status: 200,
       myCollection: payload
     }
   },
@@ -260,6 +266,7 @@ export default handleActions({
       isUploading: false,
       isUploaded: false,
       statusText: payload.statusText,
+      status: payload.status,
       myCollection: null
     }
   },
@@ -272,14 +279,16 @@ export default handleActions({
   [PARSE_XLSX_SUCCESS]: (state, { payload }) => {
     return {...state,
       isParsing: false,
-      isParsed: true
+      isParsed: true,
+      status: 200
     }
   },
   [PARSE_XLSX_FAIL]: (state, { payload }) => {
     return {...state,
       isParsing: false,
       isParsed: false,
-      statusText: payload.statusText
+      statusText: payload.statusText,
+      status: payload.status
     }
   },
   [FETCH_TREE_REQUEST]: (state, { payload }) => {
@@ -292,7 +301,8 @@ export default handleActions({
     return {...state,
       isFetchingTree: false,
       isFetchTree: true,
-      treeData: payload
+      treeData: payload,
+      status: 200
     }
   },
   [FETCH_TREE_FAIL]: (state, { payload }) => {
@@ -300,6 +310,7 @@ export default handleActions({
       isFetchTree: false,
       isFetchingTree: false,
       statusText: payload.statusText,
+      status: payload.status,
       treeData: null
     }
   }

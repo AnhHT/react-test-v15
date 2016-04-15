@@ -12,4 +12,4 @@ export function parseJSON (response) {
   return response.json()
 }
 
-export const API_URL = 'http://hp:83/Api/DataWarehouse'
+export const API_URL = 'http://hp:83/DataWarehouse'

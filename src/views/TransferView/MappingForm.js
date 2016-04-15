@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 import Select from 'react-select'
-import {CallbackType} from './CallbackType'
+import {CallbackType, DefaultMappingObj} from './Constant'
+import {find, findIndex, difference, split} from 'lodash'
 
 const validateForm = (state) => {
   let errors = []
@@ -36,7 +37,7 @@ export default class MappingForm extends Component {
     this.saveMappingTemplate = this.saveMappingTemplate.bind(this)
     this.handleInputChange = this.handleInputChange.bind(this)
     this.state = {
-      selectedFields: props.previewFileObj.SelectedValues.map((item) => { return `${item.FieldId}` }),
+      selectedFields: props.previewFileObj.SelectedFieldsObject.map((item) => { return `${item.Id}` }),
       headerIndex: props.previewFileObj.HeaderIndex,
       dataIndex: props.previewFileObj.DataIndex,
       footerIndex: props.previewFileObj.FooterIndex,
@@ -61,21 +62,40 @@ export default class MappingForm extends Component {
   handleSelectChange (value) {
     const { fieldList, callback, previewFileObj } = this.props
     if (!value) {
-      value = []
-    } else if (value.split(',').length > (previewFileObj.MaxSelectedValues - 2)) {
-      callback(CallbackType.VALIDATE_ERROR, 'Số lượng mapping-field không được vượt quá giới hạn bảng mẫu !')
-      return
+      this.setState({selectedFields: []})
+      callback(CallbackType.AUTO_COMPLETE_CHANGE, {
+        selectedFields: [],
+        selectedFieldsObject: []
+      })
+    } else {
+      let currentValues = split(value, ',')
+      let previousValues = split(this.state.selectedFields, ',')
+      if (currentValues.length > (previewFileObj.MaxSelectedValues - 2)) {
+        callback(CallbackType.VALIDATE_ERROR, 'Số lượng mapping-field không được vượt quá giới hạn bảng mẫu !')
+        return
+      }
+
+      this.setState({ selectedFields: value })
+      // 1: Add , 0: Remove
+      let currentSelectedFields = previewFileObj.SelectedFieldsObject
+      const currentAction = currentValues.length >= previousValues.length
+      if (currentAction) {
+        let diff = difference(currentValues, previousValues)
+        let obj = find(fieldList, {value: diff[0]})
+        currentSelectedFields = [...currentSelectedFields, {
+          Id: obj.Id, Name: obj.Name, MappingObject: DefaultMappingObj
+        }]
+      } else {
+        let diff = difference(previousValues, currentValues)
+        let index = findIndex(currentSelectedFields, {Id: parseInt(diff[0])})
+        currentSelectedFields = [...currentSelectedFields.slice(0, index), ...currentSelectedFields.slice(index + 1)]
+      }
+
+      callback(CallbackType.AUTO_COMPLETE_CHANGE, {
+        selectedFields: value,
+        selectedFieldsObject: currentSelectedFields
+      })
     }
-
-    this.setState({ selectedFields: value })
-    const selectedFieldsObject = fieldList.filter((item) => {
-      return value.indexOf(item.value) > -1
-    })
-
-    callback(CallbackType.AUTO_COMPLETE_CHANGE, {
-      selectedFields: value,
-      selectedFieldsObject: selectedFieldsObject
-    })
   }
 
   saveMappingTemplate (e) {

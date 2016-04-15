@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react'
 import MappingView from './MappingView'
 import {actions as manageData} from '../../redux/modules/Todos'
 import {connect} from 'react-redux'
-import classes from './DataView.scss'
+import classes from './Index.scss'
 
 const mapStateToProps = (state) => ({
   isUploading: state.todo.isUploading,
@@ -10,10 +10,11 @@ const mapStateToProps = (state) => ({
   isFetchFields: state.todo.isFetchFields,
   isFetchingFields: state.todo.isFetchingFields,
   data: state.todo.myCollection,
-  mappingFields: state.todo.mappingFields
+  mappingFields: state.todo.mappingFields,
+  status: state.todo.status
 })
 
-export default class DataView extends Component {
+export default class Index extends Component {
   static propTypes = {
     data: PropTypes.object,
     isUploading: PropTypes.bool,
@@ -22,7 +23,8 @@ export default class DataView extends Component {
     parseXlsx: PropTypes.func,
     mappingFields: PropTypes.array,
     getFields: PropTypes.func,
-    isFetchFields: PropTypes.bool
+    isFetchFields: PropTypes.bool,
+    status: PropTypes.number
   };
 
   constructor (props) {
@@ -33,11 +35,17 @@ export default class DataView extends Component {
     }
   }
 
+  componentWillReceiveProps (nextProps) {
+    if (nextProps.status > 400) {
+      this.setState({uploadStep1: 'Đã xảy ra lỗi hệ thống !'})
+    }
+  }
+
   handleSubmit (e) {
     e.preventDefault()
     if (this.state.fileData) {
-      this.props.uploadFile(this.state.fileData)
       this.setState({uploadStep1: ''})
+      this.props.uploadFile(this.state.fileData)
     } else {
       this.setState({uploadStep1: 'Hãy chọn một file Excel định dạng .xlsx !'})
     }
@@ -54,12 +62,12 @@ export default class DataView extends Component {
 
   render () {
     let key = 1
-    const {isUploading, isUploaded, data, getFields, mappingFields, parseXlsx, isFetchFields} = this.props
+    const {isUploading, isUploaded, data, getFields, mappingFields, parseXlsx, isFetchFields, status} = this.props
     const mappingView = (isUploaded && data) ? (
       <MappingView key={key} previewFile={data} getFields={getFields} fields={mappingFields}
         parseXlsx={parseXlsx} isFetch={isFetchFields}/>)
       : (isUploading ? <div>loading...</div> : <div></div>)
-    const step1Class = `alert alert-info ${this.state.uploadStep1.length ? '' : 'hide'}`
+    const step1Class = `alert ${status > 400 ? 'alert-danger' : 'alert-info'} ${this.state.uploadStep1.length ? '' : 'hide'}`
     return (
       <div className={classes.tempView}>
         <div style={{paddingBottom: 10, paddingTop: 10, width: '50%'}}>
@@ -68,7 +76,7 @@ export default class DataView extends Component {
             <div className='form-group' style={{paddingRight: 10}}>
               <input type='file' onChange={::this.handleFile} className='form-control'/>
             </div>
-            <button type='button' onClick={::this.handleSubmit} className='btn btn-default'>Upload</button>
+            <button type='button' onClick={::this.handleSubmit} className='btn btn-primary'>Upload</button>
           </form>
         </div>
         <div>
@@ -79,4 +87,4 @@ export default class DataView extends Component {
   }
 }
 
-export default connect(mapStateToProps, manageData)(DataView)
+export default connect(mapStateToProps, manageData)(Index)
