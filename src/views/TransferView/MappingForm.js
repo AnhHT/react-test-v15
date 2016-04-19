@@ -42,7 +42,7 @@ export default class MappingForm extends Component {
       dataIndex: props.previewFileObj.DataIndex,
       footerIndex: props.previewFileObj.FooterIndex,
       templateId: props.previewFileObj.Id,
-      objectType: props.previewFileObj.ObjectType
+      ObjectType: props.previewFileObj.ObjectType
     }
   }
 
@@ -115,12 +115,12 @@ export default class MappingForm extends Component {
       <form onSubmit={this.saveMappingTemplate} onChange={this.handleInputChange}>
         <div className='radio'>
           <label className='radio-inline'>
-            <input type='radio' name='objectType' value='0'
-              checked={this.state.objectType === 0 ? 'true' : ''}/>Đơn vị
+            <input type='radio' name='ObjectType' value='0'
+              checked={this.state.ObjectType === 0 ? 'true' : ''}/>Đơn vị
           </label>
           <label className='radio-inline'>
-            <input type='radio' name='objectType' value='1'
-              checked={this.state.objectType === 1 ? 'true' : ''}/>Cá nhân
+            <input type='radio' name='ObjectType' value='1'
+              checked={this.state.ObjectType === 1 ? 'true' : ''}/>Cá nhân
           </label>
         </div>
         <div className='form-group'>

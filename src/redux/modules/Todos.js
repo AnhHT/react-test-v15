@@ -140,12 +140,16 @@ export function uploadFile (fileData) {
 }
 
 export function parseXlsx (data) {
+  console.log('Parse Data >>> ', JSON.stringify(data))
   return (dispatch, getState) => {
     dispatch(parseXlsxRequest())
     return fetch(`${API_URL}/Excel/ParseXlsxNew`, {
       method: 'POST',
-      mode: 'cors',
-      body: data
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
     }).then(checkHttpStatus)
       .then(parseJSON)
       .then((response) => {

@@ -25,6 +25,11 @@ const getCards = (selectedFields, data) => {
   return cards
 }
 
+const getMaxSelectedValues = (dataHeader) => {
+  const tempDataIdx = Math.round(dataHeader.length / 2) + 1
+  return dataHeader[tempDataIdx].Columns.length
+}
+
 export default class MappingView extends Component {
 
   static propTypes = {
@@ -64,7 +69,7 @@ export default class MappingView extends Component {
   }
 
   handleCallback (callbackType, callbackResult) {
-    const {previewFile} = this.props.previewFile
+    const {previewFile, parseXlsx} = this.props
     switch (callbackType) {
       case CallbackType.AUTO_COMPLETE_CHANGE:
         this.setState({selectedFieldsObject: [...callbackResult.selectedFieldsObject],
@@ -88,10 +93,14 @@ export default class MappingView extends Component {
         })
         break
       case CallbackType.VALIDATE_ERROR:
-        this.setState({message: callbackResult, modalIsOpen: true})
+        this.setState({message: callbackResult, modalIsOpen: true}, () => {
+          console.log('Validation >>>', this.state.message)
+        })
         break
       case CallbackType.CARD_PROPERTIES_UPDATED:
-        this.setState({cards: [...callbackResult]})
+        this.setState({cards: [...callbackResult]}, () => {
+          console.log('Card Properties >>>', this.state.cards)
+        })
         break
       case CallbackType.SAVE_FORM:
         console.log('Selected fields >>>', this.state.selectedFieldsObject)
@@ -107,11 +116,12 @@ export default class MappingView extends Component {
             FieldId: card.Id,
             col: col.Address,
             ObjectType: callbackResult.ObjectType,
-            HasCalculateForOffice: card.HasCalculateForOffice,
-            CalculateType: card.CalculateType,
-            ObjectNameType: card.ObjectNameType
+            HasCalculateForOffice: card.MappingObject.HasCalculateForOffice,
+            CalculateType: card.MappingObject.CalculateType,
+            ObjectNameType: card.MappingObject.ObjectNameType
           }]
         }
+
         const objectMapAddr = find(tempArr, {FieldId: DEFAULT_A_COL_ID}).col
         const objectTimeAddr = find(tempArr, {FieldId: DEFAULT_C_COL_ID}).col
         if (objectMapAddr === EMPTY_VAL || objectTimeAddr === EMPTY_VAL) {
@@ -144,12 +154,12 @@ export default class MappingView extends Component {
           ObjectTime: objectTime
         }
 
-        console.log(temp)
+        console.log('Submitting object >>>', temp)
+        parseXlsx(temp)
         break
       default:
         break
     }
-    // this.props.parseXlsx(temp)
   }
 
   render () {
@@ -167,7 +177,8 @@ export default class MappingView extends Component {
       DataIndex: previewFile.DataIndex,
       FooterIndex: previewFile.FooterIndex,
       ObjectType: previewFile.ObjectType,
-      SelectedFieldsObject: this.state.selectedFieldsObject
+      SelectedFieldsObject: this.state.selectedFieldsObject,
+      MaxSelectedValues: getMaxSelectedValues(previewFile.dataHeader)
     }
 
     return (

@@ -49,18 +49,6 @@ export default class MappingCardExt extends Component {
   render () {
     const cardId = this.props.cardObj.Id
     const disabled = cardId < 1
-    const calculationSection = this.state.currentCard.HasCalculateForOffice ? (
-      <div className='radio'>
-        <label className='radio-inline'>
-          <input type='radio' name='CalculateType' value='0' disabled={disabled}
-            checked={this.state.currentCard.CalculateType === 0 ? 'true' : ''}/>Tính tổng
-        </label>
-        <label className='radio-inline'>
-          <input type='radio' name='CalculateType' value='1' disabled={disabled}
-            checked={this.state.currentCard.CalculateType === 1 ? 'true' : ''}/>Tính trung bình
-        </label>
-      </div>
-    ) : ''
     return (
       <div style={{opacity: cardId < 1 ? 0.5 : 1}}>
         <form onChange={this.handleChange}>
@@ -70,7 +58,16 @@ export default class MappingCardExt extends Component {
                 checked={this.state.currentCard.HasCalculateForOffice === 1 ? 'true' : ''}/>Có tổng hợp vào đơn vị ?
             </label>
           </div>
-          {calculationSection}
+          <div className='radio'>
+            <label className='radio-inline'>
+              <input type='radio' name='CalculateType' value='0' disabled={disabled}
+                checked={this.state.currentCard.CalculateType === 0 ? 'true' : ''}/>Tính tổng
+            </label>
+            <label className='radio-inline'>
+              <input type='radio' name='CalculateType' value='1' disabled={disabled}
+                checked={this.state.currentCard.CalculateType === 1 ? 'true' : ''}/>Tính trung bình
+            </label>
+          </div>
           <div className='radio'>
             <label className='radio-inline'>
               <input type='radio' name='ObjectNameType' value='0' disabled={disabled}

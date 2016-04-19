@@ -31,7 +31,7 @@ export default class Index extends Component {
     super(props)
     this.state = {
       fileData: null,
-      uploadStep1: 'Chọn một file Excel định dạng .xlsx !'
+      uploadStep1: 'Thực hiện chuyển đổi dữ liệu từ file Excel định dạng .xlsx hoặc sửa một mẫu có sẵn!'
     }
   }
 
@@ -60,6 +60,10 @@ export default class Index extends Component {
     })
   }
 
+  handleGetTemplate (e) {
+    console.log('Hãy chọn một mẫu bất kỳ >>>')
+  }
+
   render () {
     let key = 1
     const {isUploading, isUploaded, data, getFields, mappingFields, parseXlsx, isFetchFields, status} = this.props
@@ -77,6 +81,8 @@ export default class Index extends Component {
               <input type='file' onChange={::this.handleFile} className='form-control'/>
             </div>
             <button type='button' onClick={::this.handleSubmit} className='btn btn-primary'>Upload</button>
+            {' '}
+            <button type='button' onClick={::this.handleGetTemplate} className='btn btn-info'>Chọn mẫu</button>
           </form>
         </div>
         <div>
